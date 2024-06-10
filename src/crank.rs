@@ -114,7 +114,7 @@ pub async fn run(validator_vote: String) {
     let client = get_client(&keypair, &cluster).unwrap();
     let rpc_client = RpcClient::new_with_commitment(cluster.to_string(), CommitmentConfig::finalized());
     let validator_vote = validator_vote;
-    let simulate=false;
+    let simulate=true;
     let compute_unit_price=None;
     let mut validator_index = 0;
 
